@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Company;
+use App\Models\Contact;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -21,7 +23,10 @@ class DatabaseSeeder extends Seeder
              'password' => 'password',
          ]);
 
-        $this->call (CompaniesTableSeeder::class);
+        $this->call ([
+            CompaniesTableSeeder::class,
+            ContactTableSeeder::class,
+        ]);
 
     }
 }

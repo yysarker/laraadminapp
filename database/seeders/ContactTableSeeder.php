@@ -2,13 +2,11 @@
 
     namespace Database\Seeders;
 
-    use App\Models\Company;
+    use App\Models\Contact;
     use Illuminate\Database\Console\Seeds\WithoutModelEvents;
     use Illuminate\Database\Seeder;
-    use Illuminate\Support\Facades\DB;
-    use Faker\Factory as Faker;
 
-    class CompaniesTableSeeder extends Seeder
+    class ContactTableSeeder extends Seeder
     {
         /**
          * Run the database seeds.
@@ -17,6 +15,6 @@
          */
         public function run ()
         {
-            Company::factory ()->count(10)->create();
+            Contact ::factory () -> count (50) -> create ();
         }
     }
