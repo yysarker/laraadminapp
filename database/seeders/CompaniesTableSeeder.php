@@ -5,8 +5,7 @@
     use App\Models\Company;
     use Illuminate\Database\Console\Seeds\WithoutModelEvents;
     use Illuminate\Database\Seeder;
-    use Illuminate\Support\Facades\DB;
-    use Faker\Factory as Faker;
+
 
     class CompaniesTableSeeder extends Seeder
     {
